@@ -1,4 +1,5 @@
 var http = require('http');
+var fs = require('fs');
 
 const server = http.createServer().listen(3000, "127.0.0.1");
 console.log('Server running at http://127.0.0.1:3000/');
@@ -11,7 +12,6 @@ const html = `
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-        <h1>coffe count</h1>
         <h1>coffe count</h1>
         <br/>
 		<div id="countView" class="countView">will be here</div>
@@ -30,66 +30,62 @@ body {
 `;
 
 const script = `
+
 console.log("Hello from Coffe-Count!");
 
 var countView    = document.getElementById('countView');
 var btnAddCoffe  = document.getElementById('btnAddCoffe');
-var ls = localStorage.getItem('coffe');
+var coffeCount = getCookie('coffe');
 
-if(!ls) {
-	localStorage.setItem('coffe', 0);
-	ls = localStorage.getItem('coffe');
-}
+countView.innerHTML = coffeCount;
 
-console.log(localStorage);
-
-countView.innerHTML = localStorage.coffe;
-
-function addCoffe(count = 0) {
-
-	let coffeCount = localStorage.getItem('coffe');
-	console.log("coffe in localStorage: " + coffeCount);
+function minusCoffe(count = 0) {
+	console.log("coffe in cookie: " + coffeCount);
 
 	if(coffeCount) {
-		coffeCount ++ ;
+		coffeCount -- ;
 		console.log(coffeCount);
-		localStorage.setItem('coffe', coffeCount)
+		document.cookie = 'coffe=' + coffeCount;
 		countView.innerHTML = coffeCount;
 	}
 
 	console.log(count + " coffe was added");
+
 }
-
-btnAddCoffe.addEventListener('click', function(){
-
-	addCoffe(1);
-
-});
-
-function minusCoffe(count = 0) {
-
-	let coffeCount = localStorage.getItem('coffe');
-	console.log("coffe in localStorage: " + coffeCount);
+function addCoffe(count = 0) {
+	console.log("coffe in cookie: " + coffeCount);
 
 	if(coffeCount) {
-		coffeCount --  ;
+		coffeCount ++ ;
 		console.log(coffeCount);
-		localStorage.setItem('coffe', coffeCount)
+		document.cookie = 'coffe=' + coffeCount;
 		countView.innerHTML = coffeCount;
 	}
 
-	console.log(count + " coffe was minused");
+	console.log(count + " coffe was added");
+
+}
+function getCookie(name) {
+  if(!document.cookie){ return 'no one cookie'; }
+  console.log('getCookie('+ name +')');
+  var value = "; " + document.cookie;
+  var parts = value.split("; " + name + "=");
+  if (parts.length == 2) return parts.pop().split(";").shift();
 }
 
+btnAddCoffe.addEventListener('click', function(){
+	addCoffe(1);
+});
 btnMinusCoffe.addEventListener('click', function(){
 
 	minusCoffe(1);
 
 });
+
 `;
 
 server.on('request', (req, res) => { 
-	console.log(req.url);
+	console.log("request for: " + req.url);
 
 	switch(req.url) {
 		case '/':

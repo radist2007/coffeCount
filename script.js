@@ -2,7 +2,14 @@ console.log("Hello from Coffe-Count!");
 
 var countView    = document.getElementById('countView');
 var btnAddCoffe  = document.getElementById('btnAddCoffe');
-var localStorage = localStorage.getItem('coffe');
+var ls = localStorage.getItem('coffe');
+
+if(!ls) {
+	localStorage.setItem('coffe', 0);
+	ls = localStorage.getItem('coffe');
+}
+
+console.log(localStorage);
 
 countView.innerHTML = localStorage.coffe;
 
