@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/radist2007/coffeCount#readme",
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "gulp": "^4.0.2",
     "gulp-less": "^4.0.1"
   },
