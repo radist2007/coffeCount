@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-var ghpages = require('gh-pages');
+const ghpages = require('gh-pages');
 
 const app = express();
 
