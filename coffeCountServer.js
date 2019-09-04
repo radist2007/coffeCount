@@ -1,21 +1,14 @@
 const express = require('express');
 const path = require('path');
-const ghpages = require('gh-pages');
 
 const app = express();
 
- 
-ghpages.publish('frontend/Public', function(err) {
-
-	if(err){ console.log(err); }
-});
-
 app.get('/', (req, res) => {
+	console.log("request for: " + req.url);
 	res.sendFile(path.join(__dirname+'/frontend/Public/index.html'));
 });
 
-app.use(express.static(__dirname + '/frontend/Public/css'));
-app.use(express.static(__dirname + '/frontend/Public/js'));
+app.use(express.static('frontend/Public'));
 
 const port = process.env.PORT || 3000;
 app.listen(3000, ()=> console.log(`Listening on port ${port}...`));
