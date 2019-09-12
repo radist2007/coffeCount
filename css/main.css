@@ -1,0 +1,28 @@
+body {
+	background-color: #C86428;
+}
+
+.title {
+	color: #552000;
+}
+
+.btn {
+	height: 50px;
+	width: 100px;
+}
+
+.btn-add {
+	background-color: #08A242;
+	color: white;
+}
+
+.btn-del {
+	background-color: #C82F28;
+	color: white;
+}
+
+.info {
+	color: white;
+}
+
+
