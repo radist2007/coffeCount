@@ -80,8 +80,6 @@ class View extends EventEmitter {
 
 	setLastTime() {
 		let temp = new Date();
-		console.log("yep");
-		console.log(temp);
 		this._lastTimeElem.innerHTML = new Date();
 	}
 
