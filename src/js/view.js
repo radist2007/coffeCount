@@ -12,12 +12,17 @@ class View extends EventEmitter {
 		this._days;
 		this._avrDay;
 		this._avrTea;
-
+		this._gramInCoffee = 20;
+		this._gramOfMilkInCoffee = 50;
+		this._lastTime;
 		this._countElem       = document.getElementById('count');
 		this._totalAmountElem = document.getElementById('totalAmount');
 		this._daysElem   = document.getElementById('days');
 		this._avrDayElem = document.getElementById('avrDay');
 		this._avrTeaElem = document.getElementById('avrTea');
+		this._coffeeForDay = document.getElementById('coffeeForDay');
+		this._lastTimeElem = document.getElementById('lastTime');
+		console.log(this._lastTimeElem);
 
 		this.addCoffBtn  = document.getElementById('addBtn');
 		this.delCoffBtn  = document.getElementById('delBtn');
@@ -50,6 +55,12 @@ class View extends EventEmitter {
 		this._daysElem.innerHTML = this._days;
 	}
 
+	setViewAvrCoffeeForDay() {
+		let temp = this._gramInCoffee + this._gramOfMilkInCoffee;
+		temp = Math.round(temp * this._avrDay * 100) / 100;
+		this._coffeeForDay.innerHTML = temp;
+	}
+
 	setAvrDay() {
 		this._avrDay = this._count / this._days;
 		this._avrDay = Math.round(this._avrDay * 100) / 100;
@@ -67,12 +78,20 @@ class View extends EventEmitter {
 		this._totalAmountElem.innerHTML = this._totalAmount;
 	}
 
+	setLastTime() {
+		let temp = new Date();
+		console.log("yep");
+		console.log(temp);
+		this._lastTimeElem.innerHTML = new Date();
+	}
+
 	addCoffee(){
 		this._count++;
 		this._countElem.innerHTML = this._count;
 		this.setAvrDay();
 		this.setAvrTea();
 		this.setTotalAmount();
+		this.setLastTime()
 	}
 
 	delCoffee(){

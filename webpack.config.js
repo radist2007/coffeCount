@@ -8,7 +8,7 @@ let config = {
 
 	output: {
 		path: path.resolve(__dirname, './dist'),	
-		filename: 'main.js',
+		filename: 'js/main.js',// out path:
 		publicPath: 'dist/',
 	},
 
@@ -24,7 +24,7 @@ let config = {
 		  use: [
 			{
 			  loader: "html-loader",
-			  options: { minimize: true },
+			  options: { minimize: false },
 			},
 		   ],
 		},
@@ -56,7 +56,7 @@ let config = {
 	  new MiniCssExtractPlugin({
 		// Options similar to the same options in webpackOptions.output
 		// all options are optional
-		filename: '[name].css',
+		filename: 'css/[name].css',// out path:
 		chunkFilename: '[id].css',
 		ignoreOrder: false, // Enable to remove warnings about conflicting order
 	  }),

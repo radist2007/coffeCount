@@ -12,6 +12,8 @@ class Controller {
 		this._view.setAvrDay();
 		this._view.setAvrTea();
 
+		this._view.setViewAvrCoffeeForDay();
+
 		view.on('add', this.addCoffee.bind(this));
 		view.on('del', this.delCoffee.bind(this));
 

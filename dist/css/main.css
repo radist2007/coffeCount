@@ -2,12 +2,6 @@ body {
 	background-color: #C86428;
 }
 
-button {
-	border: none;
-	border-radius: 4px;
-	font-size: 20px;
-}
-
 .title {
 	color: #552000;
 }
@@ -30,4 +24,5 @@ button {
 .info {
 	color: white;
 }
+
 
