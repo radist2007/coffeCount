@@ -1,11 +1,49 @@
+.primary {
+	background-color: #BC804A;
+}
+
+.secondary {
+	background-color: #FFCF97;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  margin: 15px;
+  box-sizing: border-box;
+}
+
 body {
-	background-color: #C86428;
+	background-color: #FFCF97;
+	margin: 0;
 }
 
 button {
 	font-size: 20px;
 	border: none;
 	border-radius: 4px;
+}
+
+main {
+	color: #38251F;
+}
+
+.collection-item {
+	background-color: #ffebb9!important;
+}
+
+
+.padding-0 {
+	padding: 0;
 }
 
 .title {
