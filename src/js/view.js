@@ -90,6 +90,7 @@ class View extends EventEmitter {
 		this.setAvrTea();
 		this.setTotalAmount();
 		this.setLastTime()
+	    M.toast({html: 'One coffee added!'})
 	}
 
 	delCoffee(){
