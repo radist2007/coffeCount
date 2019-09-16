@@ -1,5 +1,11 @@
 import Main from './js/main.js';
 
+window.addEventListener("load", function() {
+	setTimeout(function(){
+		window.scrollTo(0, 1);
+		console.log("YEP!");
+	}, 0);
+});
 document.addEventListener('DOMContentLoaded', function() {
 	console.log("Materialcss");
 	var el    = document.querySelector('#tabs');

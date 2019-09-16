@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>coffee count</title>
@@ -13,243 +14,391 @@
 
 <body>
 
-	<nav class="nav-extended primary">
-
-		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">coffee count</a>
-			<a href="#" data-target="mobile-demo" class="sidenav-trigger">
-				<i class="material-icons">menu</i>
-			</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="sass.html">Sass</a></li>
-				<li><a href="badges.html">Components</a></li>
-				<li><a href="collapsible.html">JavaScript</a></li>
-			</ul>
-		</div>
-
-		<div class="nav-content">
-			<ul id="tabs" class="tabs tabs-transparent">
-				<li class="tab">
-					<a href="#test2">
-						<i class="large material-icons">person</i>
-					</a>
-				</li>
-				<li class="tab">
-					<a href="#test1">
-						<i class="large material-icons">local_cafe</i>
-					</a>
-				</li>
-				<li class="tab">
-					<a href="#test3">
-						<i class="large material-icons">store</i>
-					</a>
-				</li>
-				<li class="tab">
-					<a href="#test4">
-						<i class="large material-icons">assessment</i>
-					</a>
-				</li>
-			</ul>
-		</div>
-
-	</nav>
-
-	<ul class="sidenav" id="mobile-demo">
-		<li><a href="sass.html">Sass</a></li>
-		<li><a href="badges.html">Components</a></li>
-		<li><a href="collapsible.html">JavaScript</a></li>
-	</ul>
-
-	<div id="test1" class="col s12">
-		<p>Ка́ва — напій, що виготовляється зі смаженого насіння плодів — «бобів» кавового дерева. Кава найбільше цінується через виражену збадьорливу дію, завдяки вмісту алкалоїдів кофеїну та теоброміну. Кава культивується з давніх часів і займає важливе місце в кулінарних традиціях багатьох культур світу.</p>
-		<p>Еспресо (італ. espresso) — отримують за допомогою спеціальної еспресо-машини, в якій через мелену каву під тиском подається гаряча вода нагріта до температури 88-91 °C.</p>
-	</div>
-
-	<div id="test2" class="col s12">
-		<ul class="collapsible">
+	<header>
+		<nav class="nav-extended primary">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">coffee count</a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger">
+					<i class="material-icons">menu</i>
+				</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="sass.html">Sass</a></li>
+					<li><a href="badges.html">Components</a></li>
+					<li><a href="collapsible.html">JavaScript</a></li>
+				</ul>
+			</div>
+			<div class="nav-content">
+				<ul id="tabs" class="tabs tabs-transparent">
+					<li class="tab">
+						<a href="#coffee">
+							<i class="large material-icons">local_cafe</i>
+						</a>
+					</li>
+					<li class="tab">
+						<a href="#temp">
+							<i class="large material-icons">person</i>
+						</a>
+					</li>
+					<li class="tab">
+						<a href="#caffes">
+							<i class="large material-icons">store</i>
+						</a>
+					</li>
+					<li class="tab">
+						<a href="#assessment">
+							<i class="large material-icons">assessment</i>
+						</a>
+					</li>
+					<li class="tab">
+						<a href="#settings">
+							<i class="large material-icons">settings</i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<ul class="sidenav" id="mobile-demo">
 			<li>
-				<div class="collapsible-header">
-					<i class="material-icons">store</i>
-					lumore
-					<span class="badge">30 cups 600 grn</span>
-				</div>
-				<div class="collapsible-body padding-0">
-					<ul class="collection">
-						<li class="collection-item avatar">
-							<i class="material-icons circle">person</i>
-							<span class="title">name</span>
-							<p>
-								10 cups  
-								<br>
-								20 grn
-							</p>
-							<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-						</li>
-						<li class="collection-item avatar">
-							<i class="material-icons circle">person</i>
-							<span class="title">name</span>
-							<p>
-								10 cups  
-								<br>
-								20 grn
-							</p>
-							<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-						</li>
-						<li class="collection-item avatar">
-							<i class="material-icons circle">person</i>
-							<span class="title">name</span>
-							<p>
-								10 cups  
-								<br>
-								20 grn
-							</p>
-							<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-						</li>
-					</ul>
+				<div class="user-view">
+					<div class="background">
+						<img src="https://loremflickr.com/320/240/coffee">
+					</div>
+					<a href="#user"><img class="circle" src="https://loremflickr.com/100/100/face"></a>
+					<a href="#name"><span class="white-text name">John Doe</span></a>
+					<a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
 				</div>
 			</li>
-			<li>
-				<div class="collapsible-header">
-					<i class="material-icons">store</i>
-					bushe
-					<span class="badge">20 cups 300 grn</span>
-				</div>
-				<div class="collapsible-body">
-					<ul class="collection">
-						<li class="collection-item avatar">
-							<i class="material-icons circle">person</i>
-							<span class="title">name</span>
-							<p>
-								10 cups  
-								<br>
-								20 grn
-							</p>
-							<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-						</li>
-						<li class="collection-item avatar">
-							<i class="material-icons circle">person</i>
-							<span class="title">name</span>
-							<p>
-								10 cups  
-								<br>
-								20 grn
-							</p>
-							<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-						</li>
-					</ul>
-				</div>
-			</li>
-			<li>
-				<div class="collapsible-header">
-					<i class="material-icons">store</i>
-					coffe-bike
-				</div>
-				<div class="collapsible-body">
-					<span>Lorem ipsum dolor sit amet.</span>
-				</div>
-			</li>
-			<li>
-				<div class="collapsible-header"><i class="material-icons">store</i>next</div>
-				<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-			</li>
+			<li><a href="sass.html">Sass</a></li>
+			<li><a href="badges.html">Components</a></li>
+			<li><a href="collapsible.html">JavaScript</a></li>
 		</ul>
-	</div>
+	</header>
 
-	<div id="test3" class="col s12">
-
+	<main class="container">
 		<div class="row">
-			<div class="col s12 m6">
-				<div class="card">
-					<div class="card-image">
-						<img src="https://scontent.fiev5-1.fna.fbcdn.net/v/t31.0-0/c0.81.370.370a/p370x247/15235513_975782402528536_1214742798496446391_o.jpg?_nc_cat=109&_nc_oc=AQkFBpFRVFA4fABHQ7sCPbhep02SO1T2j0AUn7Gk9JRNsufUorRhcgSK29BNAD9-X0o&_nc_ht=scontent.fiev5-1.fna&oh=67dfca993c0108538aca27b470fcadcc&oe=5DF20D6D">
-					</div>
-					<div class="card-content">
-						<p>some text for bushe</p>
-					</div>
-				</div>
+
+			<div id="coffee" class="col s12">
+
+				<h5>About Coffee</h5>
+
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">local_cafe</i>
+							Еспре́со
+						</div>
+						<div class="collapsible-body">
+							<span>Еспре́со.</span>
+							<p> (італ. espresso — «вичавлений», «спресований»)</p>
+							<p>Температура води: 85-96°</p>
+							<p>Тиск екстракції: 8-9 бар</p>
+							<p>Пропорції: 6,5-20 г змеленої кави на 21-42 мл. води</p>
+							<p>Час екстракції: 20-34 с.</p>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">local_cafe</i>
+							Американо
+						</div>
+						<div class="collapsible-body">
+							<span>Американо.</span>
+							<p>Існує два види американо: власне американська кава, яка готується у фільтровій кавоварці (об'єм 220 мл, температура 85°) і європеїзований американо, або еспресо з додаванням окропу (об'єм 120 мл, температура 84-92°). У першому випадку вміст кофеїну в чашці американо буде значно вище, ніж в стандартній порції еспресо. У другому випадку воно буде таким же, проте концентрація кофеїну істотно знизиться.</p>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header">
+							Ка́ва
+						</div>
+						<div class="collapsible-body">
+							<p>Ка́ва — напій, що виготовляється зі смаженого насіння плодів — «бобів» кавового дерева. Кава найбільше цінується через виражену збадьорливу дію, завдяки вмісту алкалоїдів кофеїну та теоброміну. Кава культивується з давніх часів і займає важливе місце в кулінарних традиціях багатьох культур світу.</p>
+							<p>Еспресо (італ. espresso) — отримують за допомогою спеціальної еспресо-машини, в якій через мелену каву під тиском подається гаряча вода нагріта до температури 88-91 °C.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+			<div id="temp" class="col s12">
+				<ul class="collapsible">
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">store</i>
+							lumore
+							<span class="badge">30 cups 600 grn</span>
+						</div>
+						<div class="collapsible-body padding-0">
+							<ul class="collection">
+								<li class="collection-item avatar">
+									<i class="material-icons circle">person</i>
+									<span class="title">name</span>
+									<p>
+										10 cups  
+										<br>
+										20 grn
+									</p>
+									<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+								</li>
+								<li class="collection-item avatar">
+									<i class="material-icons circle">person</i>
+									<span class="title">name</span>
+									<p>
+										10 cups  
+										<br>
+										20 grn
+									</p>
+									<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+								</li>
+								<li class="collection-item avatar">
+									<i class="material-icons circle">person</i>
+									<span class="title">name</span>
+									<p>
+										10 cups  
+										<br>
+										20 grn
+									</p>
+									<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">store</i>
+							bushe
+							<span class="badge">20 cups 300 grn</span>
+						</div>
+						<div class="collapsible-body">
+							<ul class="collection">
+								<li class="collection-item avatar">
+									<i class="material-icons circle">person</i>
+									<span class="title">name</span>
+									<p>
+										10 cups  
+										<br>
+										20 grn
+									</p>
+									<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+								</li>
+								<li class="collection-item avatar">
+									<i class="material-icons circle">person</i>
+									<span class="title">name</span>
+									<p>
+										10 cups  
+										<br>
+										20 grn
+									</p>
+									<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">store</i>
+							coffe-bike
+						</div>
+						<div class="collapsible-body">
+							<span>Lorem ipsum dolor sit amet.</span>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">store</i>next</div>
+						<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+					</li>
+				</ul>
 			</div>
-			<div class="col s12 m6">
-				<div class="card">
-					<div class="card-image">
-						<img src="https://scontent.fiev5-1.fna.fbcdn.net/v/t1.0-1/p720x720/19274812_100131923947794_2794557905147262701_n.jpg?_nc_cat=103&_nc_oc=AQkINMqVfOtaRH_Lmfn0DFybfFsQktRZ91ox47dkLVp5QEV6PXGDUOVSKuzItaVuoYA&_nc_ht=scontent.fiev5-1.fna&oh=8efdbe1a238f12f35c2f2bbff5b18881&oe=5DF8C0A8">
+
+
+			<div id="caffes" class="col s12">
+				<div class="row">
+					<div class="col s12">
+						<h5>caffes</h5>
 					</div>
-					<div class="card-content">
-						<p>some text for lumore</p>
-					</div>
-				</div>
-			</div>
+
+					<div class="col s12">
+						<ul class="collapsible">
+							<li>
+								<div class="collapsible-header  green">
+									<i class="material-icons">add</i>
+									Add caffe
+								</div>
+								<div class="collapsible-body">
+									<span>Lorem ipsum dolor sit amet.</span>
+<div class="row">
+	<div class="col s12">
+		<div class="input-field col s12">
+			<input id="last_name" type="text" class="validate">
+			<label for="last_name">caffe name</label>
+			<a class="waves-effect waves-light btn right">button</a>
 		</div>
-
 	</div>
+</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 
-	<div id="test4" class="col s12">
+					<div class="col s12 m6">
+						<div class="card">
+							<div class="card-image">
+								<img src="https://scontent.fiev5-1.fna.fbcdn.net/v/t31.0-0/c0.81.370.370a/p370x247/15235513_975782402528536_1214742798496446391_o.jpg?_nc_cat=109&_nc_oc=AQkFBpFRVFA4fABHQ7sCPbhep02SO1T2j0AUn7Gk9JRNsufUorRhcgSK29BNAD9-X0o&_nc_ht=scontent.fiev5-1.fna&oh=67dfca993c0108538aca27b470fcadcc&oe=5DF20D6D">
+							</div>
+							<div class="card-content">
+								<p>some text for bushe</p>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m6">
+						<div class="card">
+							<div class="card-image">
+								<img src="https://scontent.fiev5-1.fna.fbcdn.net/v/t1.0-1/p720x720/19274812_100131923947794_2794557905147262701_n.jpg?_nc_cat=103&_nc_oc=AQkINMqVfOtaRH_Lmfn0DFybfFsQktRZ91ox47dkLVp5QEV6PXGDUOVSKuzItaVuoYA&_nc_ht=scontent.fiev5-1.fna&oh=8efdbe1a238f12f35c2f2bbff5b18881&oe=5DF8C0A8">
+							</div>
+							<div class="card-content">
+								<p>some text for lumore</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<div id="assessment" class="col s12">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<span id="days" class="info"></span>
+							<span id="count" class="info"></span>
+							<span id="totalAmount" class="info col"></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<span id="avrTeaForMonth" class="info"></span>
+							teaMonth
+							<span id="avrDay" class="info"></span>
+							teaDay
+							days.
+							<span id="avrTea" class="info"></span>
+							cups.
+							<span id="totalAmount" class="info col"></span>
+							grn.
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="">
+								avrege coffee gram for day: 
+								<span id="coffeeForDay" class="info"></span>
+								gram.
+							</div>
+
+							<div class="">
+								avrege coffee gram for month: 
+								<span id="coffeeForMonth" class="info"></span>
+							</div>
+
+							<div class="">
+								last coffe at: 
+								<span id="lastTime" class="info"></span>
+							</div>
+							<button id="delBtn" class="del btn btn-del">del</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="settings" class="col s12">
+				<h5>settings</h5>
+				<div class="divider"></div>
+				<div class="clearfix"></div>
+
+				<div>
+					<!-- Switch -->
+					<h6 class="">Show same data</h6>
+					<div class="switch ">
+						<label>
+							Off
+							<input type="checkbox">
+							<span class="lever"></span>
+							On
+						</label>
+					</div>
+				</div>
+
+				<div>
+					<h6>Langvige</h6>
+					<form action="#">
+						<p>
+							<label>
+								<input name="group1" type="radio" checked />
+								<span>Ukrain</span>
+							</label>
+						</p>
+						<p>
+							<label>
+								<input name="group1" type="radio" />
+								<span>English</span>
+							</label>
+						</p>
+					</form>
+					<div class="clearfix"></div>
+					<div class="divider"></div>
+				</div>
+
+				<form action="#">
+					<p>
+						<label>
+							<input type="checkbox" />
+							<span>reed same</span>
+						</label>
+					</p>
+					<p>
+						<label>
+							<input type="checkbox" checked="checked" />
+							<span>Yellow</span>
+						</label>
+					</p>
+					<p>
+						<label>
+							<input type="checkbox" class="filled-in" checked="checked" />
+							<span>Filled in</span>
+						</label>
+					</p>
+				</form>
+			</div>
+
+			<div class="divider"></div>
+
+
+		</div>
+	</main>
+	
+	<footer class="page-footer">
 		<div class="container">
 			<div class="row">
-				<div class="col">
-					<span id="days" class="info"></span>
-					<span id="count" class="info"></span>
-					<span id="totalAmount" class="info col"></span>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<span id="avrTeaForMonth" class="info"></span>
-					teaMonth
-					<span id="avrDay" class="info"></span>
-					teaDay
-					days.
-					<span id="avrTea" class="info"></span>
-					cups.
-					<span id="totalAmount" class="info col"></span>
-					grn.
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<div class="">
-						avrege coffee gram for day: 
-						<span id="coffeeForDay" class="info"></span>
-						gram.
-					</div>
-
-					<div class="">
-						avrege coffee gram for month: 
-						<span id="coffeeForMonth" class="info"></span>
-					</div>
-
-					<div class="">
-						last coffe at: 
-						<span id="lastTime" class="info"></span>
-					</div>
-					<button id="delBtn" class="del btn btn-del">del</button>
+				<div class="col l6 s12">
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="divider"></div>
-
-	<main>
-
-
-
+		<div class="footer-copyright">
+			<div class="container">
+				© 2014 Copyright Text
+			</div>
+		</div>
 		<div class="fixed-action-btn">
 			<a id="addBtn" class="btn-floating btn-large green waves-effect waves-light">
-				<i class="large material-icons">add</i>
+				<i class="large material-icons">local_cafe</i>
 			</a>
-				<ul>
-					<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-					<li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-					<li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-					<li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-				</ul>
+			<ul>
+				<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+				<li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+				<li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+				<li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+			</ul>
 		</div>
-
-	</main>
-
+	</footer>
 
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 </html>

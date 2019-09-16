@@ -6,23 +6,10 @@
 	background-color: #FFCF97;
 }
 
-.container {
-  padding: 0 20px;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col {
-  margin: 15px;
-  box-sizing: border-box;
-}
-
 body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 	background-color: #FFCF97;
 	margin: 0;
 }
@@ -34,9 +21,11 @@ button {
 }
 
 main {
+	flex: 1 0 auto;
 	color: #38251F;
 }
 
+.collapsible-body,
 .collection-item {
 	background-color: #FFFFE7!important;
 }
@@ -69,4 +58,14 @@ main {
 	color: white;
 }
 
+.fixed-action-btn > a {
+	background-color: #38251F!important;
+}
 
+.page-footer {
+	background-color: #BC804A!important;
+}
+
+.footer-copyright {
+	background-color: #38251F!important;
+}
