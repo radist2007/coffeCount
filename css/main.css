@@ -5,6 +5,10 @@
 .secondary {
 	background-color: #FFCF97;
 }
+.accent {
+	background-color: #38251F!important;
+	color: #FFCF97;
+}
 
 body {
 	display: flex;
@@ -39,11 +43,6 @@ main {
 	color: #552000;
 }
 
-.btn {
-	height: 50px;
-	width: 100px;
-}
-
 .btn-add {
 	background-color: #08A242;
 	color: white;
@@ -55,7 +54,7 @@ main {
 }
 
 .info {
-	color: white;
+	color: #38251F!important;
 }
 
 .fixed-action-btn > a {
